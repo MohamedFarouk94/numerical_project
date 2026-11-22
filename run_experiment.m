@@ -111,7 +111,7 @@ function print_report(name, x0, params, res)
             res(m).x(1), res(m).x(2));
     end
 
-    fprintf('\nLaTeX rows (Metric & SD & Damped Newton & BFGS):\n');
+    fprintf('\nLaTeX rows (Metric & SD & Damped Newton & BFGS):\n\n');
     print_tex('Iterations',                  {res.iterations}, 'int');
     print_tex('Final objective value',       {res.f},          'sci');
     print_tex('Distance to minimum',         {res.dist},       'sci');
